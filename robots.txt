@@ -1,0 +1,12 @@
+# robots.txt for Sipho's Plumbing & Maintenance
+# Allows search engines to index the whole public site.
+
+User-agent: *
+Allow: /
+
+# Don't waste crawl budget on assets that don't need indexing
+Disallow: /screenshots/
+Disallow: /js/
+
+# Location of the XML sitemap
+Sitemap: https://siphosplumbing.co.za/sitemap.xml

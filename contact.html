@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sipho's Plumbing & Maintenance, Johannesburg</title>
+    <meta name="description" content="Contact Sipho's Plumbing & Maintenance in Bramley, Johannesburg. Phone, email, opening hours and an interactive map of our service areas.">
+    <meta name="keywords" content="contact plumber Johannesburg, plumber Bramley contact, emergency plumber number Johannesburg">
+    <meta name="author" content="Sipho's Plumbing &amp; Maintenance">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://siphosplumbing.co.za/contact.html">
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Us | Sipho's Plumbing & Maintenance, Johannesburg">
+    <meta property="og:description" content="Contact Sipho's Plumbing & Maintenance in Bramley, Johannesburg. Phone, email, opening hours and an interactive map of our service areas.">
+    <meta property="og:url" content="https://siphosplumbing.co.za/contact.html">
+    <meta property="og:image" content="https://siphosplumbing.co.za/images/logo-full.png">
+    <meta property="og:locale" content="en_ZA">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/logo-full.png" type="image/png">
+    <!-- Leaflet: interactive map library (Part 3) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo-full.png" alt="Sipho Plumbing — Reliable & Professional Plumbing Services" class="logo-img"></a>
+        </div>
+        <button id="nav-toggle" class="nav-toggle" type="button"
+                aria-expanded="false" aria-controls="main-nav">☰ Menu</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Get a Quote</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="call-now" href="tel:+27110000000">Call Now: 011 000 0000</a>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h1>Contact Us</h1>
+        </section>
+
+        <!-- ============ LOCATIONS ============ -->
+        <!-- Assignment requires more than one location for the contact page. -->
+        <section class="locations">
+            <article class="location">
+                <h2>Main Workshop</h2>
+                <p>12 Bramley Road, Bramley, Johannesburg, 2018</p>
+                <p>Mon &ndash; Fri: 07:00 &ndash; 17:00 | Sat: 08:00 &ndash; 13:00</p>
+            </article>
+            <article class="location">
+                <h2>Service Area &ndash; Northern Suburbs</h2>
+                <p>Covering Sandton, Bryanston, Rivonia and surrounding areas</p>
+                <p>Emergency call-outs available daily</p>
+            </article>
+        </section>
+
+        <!-- ============ OPENING HOURS ============ -->
+        <section class="hours">
+            <h2>Opening Hours</h2>
+            <table class="hours-table">
+                <tbody>
+                    <tr><th>Monday &ndash; Friday</th><td>07:00 &ndash; 17:00</td></tr>
+                    <tr><th>Saturday</th><td>08:00 &ndash; 13:00</td></tr>
+                    <tr><th>Sunday</th><td>Closed (emergency call-outs only)</td></tr>
+                    <tr><th>Emergency call-outs</th><td>Available 7 days a week</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ============ MAP ============ -->
+        <section class="map">
+            <h2>Find Us</h2>
+            <p>Both of our locations are marked below &mdash; click a marker for the address and hours.</p>
+            <!-- Interactive Leaflet map (Part 3): pannable, zoomable, with a marker per location -->
+            <div id="interactive-map" class="map-embed"
+                 role="application"
+                 aria-label="Interactive map of Sipho's Plumbing service locations in Johannesburg"></div>
+            <noscript>
+                <p>The interactive map requires JavaScript. Our main workshop is at
+                   12 Bramley Road, Bramley, Johannesburg, 2018.</p>
+            </noscript>
+        </section>
+
+        <!-- ============ GENERAL CONTACT FORM ============ -->
+        <!-- Note: client-side JavaScript validation and AJAX submission are added in Part 3. -->
+        <section class="contact-form">
+            <h2>Send a General Message</h2>
+            <form action="#" method="post" id="contact-form" novalidate>
+
+                <label for="contact-name">Full Name</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+
+                <label for="contact-reason">Reason for Contact</label>
+                <select id="contact-reason" name="contact-reason" required>
+                    <option value="">-- Please select --</option>
+                    <option value="general">General Enquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="contact-message" rows="6" required></textarea>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span class="current-year">2026</span> Sipho's Plumbing &amp; Maintenance. All rights reserved.</p>
+        <p>Johannesburg, Gauteng | <a href="tel:+27110000000">011 000 0000</a> | <a href="mailto:info@siphosplumbing.co.za">info@siphosplumbing.co.za</a></p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="services.html">Services</a> |
+            <a href="enquiry.html">Get a Quote</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
