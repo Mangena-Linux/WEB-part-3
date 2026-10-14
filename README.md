@@ -3,7 +3,7 @@
 ## Student Information
 - **Module:** Web Development (Introduction) — WEDE5020
 - **Student Name:** Mokolobetsi Johannes Mangena
-- **Student Number:** [insert student number]
+- **Student Number:** ST10502064
 
 ## Project Overview
 Sipho's Plumbing & Maintenance is a sole-proprietor plumbing business operating in
